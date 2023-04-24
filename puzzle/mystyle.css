@@ -1,0 +1,68 @@
+.bg{
+    background-image: url('Picsart_23-04-21_19-47-14-306 (1).jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+  }
+  .tc{
+    position: relative;
+    left: 550px;
+    top: 380px;
+    width: 350px;
+    height: 300px;
+    animation-name: ex2;
+      animation-duration: 4s;
+    animation-timing-function: ease;
+  }
+  @keyframes ex2 {
+   0%   { left:0px; top:380px;opacity: 0;}
+   100% {left:550px; top:380px;opacity: 1;}
+   }
+  .but{
+    position: relative;
+    top:350px;
+    left: 670px;
+  }
+  .tap{
+    position: relative;
+    top:190px;
+    left: 673px;
+    font-size: 17px;
+    color: white;
+    animation-name: ex1;
+    animation-duration: 1s;
+    animation-delay: 5s;
+  }
+  @keyframes ex1 {
+   0%   { left:673px; top:190px;opacity: 0;font-size: 0px;}
+   100% {left:573px; top:0px;opacity: 1;font-size: 85px;}
+   }
+   * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #e2d7d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .waviy {
+    position: relative;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
